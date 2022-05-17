@@ -14,11 +14,11 @@ int main() {
     json object = json::parse( ifs );
 
     // output element with key "the ugly"
-    std::cout << "Printing out 'the ugly'" << std::endl;
-    std::cout << object.at( "the ugly" ) << '\n';
+    std::cout << "Printing out 'the ugly' using bracket syntax" << std::endl;
+    std::cout << object[ "the ugly" ] << '\n';
 
     // change element with key "the bad"
-    std::cout << "Changing 'the bad' to something else" << std::endl;
+    std::cout << "Changing 'the bad' to something else using 'at' method" << std::endl;
     object.at( "the bad" ) = "il cattivo";
 
     // output changed array
