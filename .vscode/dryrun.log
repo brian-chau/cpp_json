@@ -1,0 +1,10 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/user/repos/cpp_json'
+g++ -Wall -Werror -g -std=c++17   -I./headers  -I./sources -c sources/main.cpp  -o sources/main.o
+# TODO: If you want to create a normal binary file, use this
+g++ -Wall -Werror -g -std=c++17   -I./headers  -I./sources -o json sources/main.o -L./libs 
+# TODO: If you want to create a shared library, use this
+# g++ -Wall -Werror -g -std=c++17    -o json sources/main.o
+echo  'json' has been compiled
+make: Leaving directory '/home/user/repos/cpp_json'
+ 
